@@ -16,10 +16,10 @@ $VERBOSE = nil
 
 puts("\n ‖ Minimal DUCO-S1 Ruby Miner")
 puts(" ‖ Duino-Coin community 2020-2022")
-puts(" ‖ https://github.com/revoxhere/duino-coin\n\n")
+puts(" ‖ https://github.com/ariprismaa/duino\n\n")
 
 # Server IP file url
-url = 'https://raw.githubusercontent.com/revoxhere/duino-coin/gh-pages/serverip.txt'
+url = 'https://raw.githubusercontent.com/ariprismaa/duino/gh-pages/serverip.txt'
 uri = URI(url)
 # Receive server IP and port
 response = Net::HTTP.get(uri) 
