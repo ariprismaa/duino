@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ##########################################
 # Duino-Coin Tkinter GUI Wallet (v2.52)
-# https://github.com/ariprismaa/duino-coin
+# https://github.com/ariprismaa/duino
 # Distributed under MIT license
 # © Duino-Coin Community 2019-2022
 ##########################################
