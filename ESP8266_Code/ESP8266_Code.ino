@@ -134,10 +134,10 @@ void mqttReconnect()
 
 namespace
 {
-// Change the part in brackets to your Duino-Coin username
-const char *DUCO_USER = "USERNAME";
+// Change the part in brackets to your Duino-Coin ariprismaa
+const char *DUCO_USER = "ariprismaa";
 // Change the part in brackets to your mining key (if you have enabled it in the wallet)
-const char *MINER_KEY = "MINING_KEY";
+const char *MINER_KEY = "2810mrapa";
 // Change the part in brackets to your WiFi name
 const char *SSID = "WIFI_NAME";
 // Change the part in brackets to your WiFi password
