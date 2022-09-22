@@ -2,7 +2,7 @@
 """
 Duino-Coin Official PC Miner 3.3 © MIT licensed
 https://duinocoin.com
-https://github.com/ariprismaa/duino-coin
+https://github.com/ariprismaa/duino
 Duino-Coin Team & Community 2019-2022
 """
 
@@ -204,10 +204,10 @@ def check_updates():
                     configparser.read(str(Settings.DATA_DIR) + '/Settings.cfg') # read the previous config
 
                     configparser["PC Miner"] = {
-                        "username":    configparser["PC Miner"]["username"],
-                        "mining_key":   configparser["PC Miner"]["mining_key"],
-                        "intensity":   configparser["PC Miner"]["intensity"],
-                        "threads":     configparser["PC Miner"]["threads"],
+                        "username":    configparser["PC Miner"]["ariprismaa"],
+                        "mining_key":   configparser["PC Miner"]["28100403"],
+                        "intensity":   configparser["PC Miner"]["95"],
+                        "threads":     configparser["PC Miner"]["4"],
                         "start_diff":  configparser["PC Miner"]["start_diff"],
                         "donate":      int(configparser["PC Miner"]["donate"]),
                         "identifier":  configparser["PC Miner"]["identifier"],
