@@ -7,7 +7,7 @@
 
   Duino-Coin Team & Community 2019-2022 © MIT Licensed
   https://duinocoin.com
-  https://github.com/revoxhere/duino-coin
+  https://github.com/ariprismaa/duino
 
   If you don't know where to start, visit official website and navigate to
   the Getting Started page. Have fun mining!
@@ -15,9 +15,9 @@
 
 /***************** START OF MINER CONFIGURATION SECTION *****************/
 // Change the part in brackets to your Duino-Coin username
-const char *DUCO_USER = "USERNAME";
+const char *DUCO_USER = "ariprismaa";
 // Change the part in brackets to your mining key (if you enabled it in the wallet)
-const char* MINER_KEY = "MINING_KEY";
+const char* MINER_KEY = "28100403";
 // Change the part in brackets to your WiFi name
 const char *SSID = "WIFI_NAME";
 // Change the part in brackets to your WiFi password
@@ -178,7 +178,7 @@ const char WEBSITE[] PROGMEM = R"=====(
     Duino-Coin self-hosted dashboard
     MIT licensed
     Duino-Coin official 2019-2022
-    https://github.com/revoxhere/duino-coin
+    https://github.com/ariprismaa/duino
     https://duinocoin.com
 -->
 
@@ -187,15 +187,15 @@ const char WEBSITE[] PROGMEM = R"=====(
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Duino-Coin @@DEVICE@@ dashboard</title>
     <link rel="stylesheet" href="https://server.duinocoin.com/assets/css/mystyles.css">
-    <link rel="shortcut icon" href="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco.png?raw=true">
-    <link rel="icon" type="image/png" href="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco.png?raw=true">
+    <link rel="shortcut icon" href="https://github.com/ariprismaa/duino/blob/master/Resources/duco.png?raw=true">
+    <link rel="icon" type="image/png" href="https://github.com/ariprismaa/duino/blob/master/Resources/duco.png?raw=true">
 </head>
 
 <body>
     <section class="section">
         <div class="container">
             <h1 class="title">
-                <img class="icon" src="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco.png?raw=true">
+                <img class="icon" src="https://github.com/ariprismaa/duino/blob/master/Resources/duco.png?raw=true">
                 @@DEVICE@@ <small>(@@ID@@)</small>
             </h1>
             <p class="subtitle">
@@ -300,8 +300,8 @@ const char WEBSITE[] PROGMEM = R"=====(
                         duinocoin.com
                     </a>
                     &bull;
-                    <a href="https://github.com/revoxhere/duino-coin">
-                        github.com/revoxhere/duino-coin
+                    <a href="https://github.com/ariprismaa/duino">
+                        github.com/ariprismaa/duino
                     </a>
                 </div>
             </div>
