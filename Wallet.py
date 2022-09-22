@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ##########################################
 # Duino-Coin Tkinter GUI Wallet (v2.52)
-# https://github.com/revoxhere/duino-coin
+# https://github.com/ariprismaa/duino-coin
 # Distributed under MIT license
 # © Duino-Coin Community 2019-2022
 ##########################################
@@ -63,7 +63,7 @@ def get_duco_price():
     global duco_fiat_value
     jsonapi = get(
         "https://raw.githubusercontent.com/"
-        + "revoxhere/"
+        + "ariprismaa/"
         + "duco-statistics/master/"
         + "api.json",
         data=None)
@@ -140,11 +140,11 @@ def get_string(string_name):
 
 
 def openTos(handler):
-    open_new_tab("https://github.com/revoxhere/duino-coin#terms-of-usage")
+    open_new_tab("https://github.com/ariprismaa/duino-coin#terms-of-usage")
 
 
 def openGitHub(handler):
-    open_new_tab("https://github.com/revoxhere/duino-coin")
+    open_new_tab("https://github.com/ariprismaa/duino-coin")
 
 
 def openWebsite(handler):
@@ -152,7 +152,7 @@ def openWebsite(handler):
 
 
 def openExchange(handler):
-    open_new_tab("https://revoxhere.github.io/duco-exchange/")
+    open_new_tab("https://ariprismaa.github.io/duco-exchange/")
 
 
 def openDiscord(handler):
@@ -2549,7 +2549,7 @@ if not Path(resources + "duco.png").is_file():
 if not Path(resources + "duco_color.png").is_file():
     urlretrieve(
         "https://github.com/"
-        + "revoxhere/"
+        + "ariprismaa/"
         + "duino-coin/blob/master/"
         + "Resources/duco.png?raw=true",
         resources + "duco_color.png")
@@ -2585,7 +2585,7 @@ if not Path(resources + "stats.png").is_file():
 if not Path(resources + "langs.json").is_file():
     urlretrieve(
         "https://raw.githubusercontent.com/"
-        + "revoxhere/"
+        + "ariprismaa/"
         + "duino-coin/master/Resources/"
         + "Wallet_langs.json",
         resources + "langs.json")
