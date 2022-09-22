@@ -140,11 +140,11 @@ def get_string(string_name):
 
 
 def openTos(handler):
-    open_new_tab("https://github.com/ariprismaa/duino-coin#terms-of-usage")
+    open_new_tab("https://github.com/ariprismaa/duino#terms-of-usage")
 
 
 def openGitHub(handler):
-    open_new_tab("https://github.com/ariprismaa/duino-coin")
+    open_new_tab("https://github.com/ariprismaa/duino")
 
 
 def openWebsite(handler):
