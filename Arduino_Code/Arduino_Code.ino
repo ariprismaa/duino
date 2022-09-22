@@ -8,7 +8,7 @@
   
   Duino-Coin Team & Community 2019-2022 © MIT Licensed
   https://duinocoin.com
-  https://github.com/revoxhere/duino-coin
+  https://github.com/ariprismaa/duino
   If you don't know where to start, visit official website and navigate to
   the Getting Started page. Have fun mining!
 */
