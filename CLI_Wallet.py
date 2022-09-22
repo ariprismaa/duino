@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ##########################################
 # Duino-Coin CLI Wallet (v2.7.1)
-# https://github.com/revoxhere/duino-coin
+# https://github.com/ariprismaa/duino
 # Distributed under MIT license
 # © Duino-Coin Community 2022
 ##########################################
@@ -50,8 +50,8 @@ if not path.exists(RESOURCES_DIR):
 # Check if commands file exists
 if not Path(RESOURCES_DIR + "/cli_wallet_commands.json").is_file():
     url = ("https://raw.githubusercontent.com/"
-           + "revoxhere/"
-           + "duino-coin/master/Resources/"
+           + "ariprismaa/"
+           + "duino/master/Resources/"
            + "cli_wallet_commands.json")
     r = requests.get(url)
     with open(RESOURCES_DIR + "/cli_wallet_commands.json", "wb") as f:
@@ -60,8 +60,8 @@ if not Path(RESOURCES_DIR + "/cli_wallet_commands.json").is_file():
 # Check if languages file exists
 if not Path(RESOURCES_DIR + "/langs.json").is_file():
     url = ("https://raw.githubusercontent.com/"
-           + "revoxhere/"
-           + "duino-coin/master/Resources/"
+           + "ariprismaa/"
+           + "duino/master/Resources/"
            + "CLI_Wallet_langs.json")
     r = requests.get(url)
     with open(RESOURCES_DIR + "/langs.json", "wb") as f:
@@ -270,7 +270,7 @@ while True:
 
         jsonapi = requests.get(
             "https://raw.githubusercontent.com/"
-            + "revoxhere/"
+            + "ariprismaa/"
             + "duco-statistics/master/api.json",
             data=None)
         if jsonapi.status_code == 200:
@@ -307,7 +307,7 @@ def reconnect():
 
             jsonapi = requests.get(
                 "https://raw.githubusercontent.com/"
-                + "revoxhere/"
+                + "ariprismaa/"
                 + "duco-statistics/master/api.json",
                 data=None)
             if jsonapi.status_code == 200:
@@ -403,7 +403,7 @@ while True:
                   + Fore.YELLOW
                   + getString("agree_requirments")
                   + Fore.WHITE
-                  + "https://github.com/revoxhere/duino-coin#terms-of-usage"
+                  + "https://github.com/ariprismaa/duino#terms-of-usage"
                   + Fore.YELLOW)
 
             username = input(
