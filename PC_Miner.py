@@ -2,7 +2,7 @@
 """
 Duino-Coin Official PC Miner 3.3 © MIT licensed
 https://duinocoin.com
-https://github.com/revoxhere/duino-coin
+https://github.com/ariprismaa/duino-coin
 Duino-Coin Team & Community 2019-2022
 """
 
@@ -139,8 +139,8 @@ class Settings:
     VER = 3.3
     DATA_DIR = "Duino-Coin PC Miner " + str(VER)
     TRANSLATIONS = ("https://raw.githubusercontent.com/"
-                    + "revoxhere/"
-                    + "duino-coin/master/Resources/"
+                    + "ariprismaa/"
+                    + "duino/master/Resources/"
                     + "PC_Miner_langs.json")
     TRANSLATIONS_FILE = "/Translations.json"
     SETTINGS_FILE = "/Settings.cfg"
@@ -179,7 +179,7 @@ def check_updates():
     """
     try:
         data = requests.get(
-            "https://api.github.com/repos/revoxhere/duino-coin/releases/latest"
+            "https://api.github.com/repos/ariprismaa/duino/releases/latest"
         ).json()
 
         zip_file = "Duino-Coin_" + data["tag_name"] + "_linux.zip"
@@ -234,11 +234,11 @@ def check_updates():
                     os.makedirs(Settings.TEMP_FOLDER) 
 
                 file_path = os.path.join(Settings.TEMP_FOLDER, zip_file)
-                download_url = "https://github.com/revoxhere/duino-coin/releases/download/" + data["tag_name"] + "/" + zip_file
+                download_url = "https://github.com/ariprismaa/duino-coin/releases/download/" + data["tag_name"] + "/" + zip_file
 
                 if running_script:
                     file_path = os.path.join(".", "PC_Miner_"+data["tag_name"]+".py")
-                    download_url = "https://raw.githubusercontent.com/revoxhere/duino-coin/master/PC_Miner.py"
+                    download_url = "https://raw.githubusercontent.com/ariprismaa/duino-coin/master/PC_Miner.py"
                     
                 r = requests.get(download_url, stream=True)
                 if r.ok:
@@ -308,7 +308,7 @@ class Algorithms:
     """
     Class containing algorithms used by the miner
     For more info about the implementation refer to the Duino whitepaper:
-    https://github.com/revoxhere/duino-coin/blob/gh-pages/assets/whitepaper.pdf
+    https://github.com/ariprismaa/duino-coin/blob/gh-pages/assets/whitepaper.pdf
     """
     def DUCOS1(last_h: str, exp_h: str, diff: int, eff: int):
         try:
@@ -732,7 +732,7 @@ class Miner:
               + Fore.RESET + "2019-2022")
 
         print(Style.DIM + Fore.YELLOW + Settings.BLOCK + Style.NORMAL
-              + Fore.YELLOW + "https://github.com/revoxhere/duino-coin")
+              + Fore.YELLOW + "https://github.com/ariprismaa/duino")
 
         if lang != "english":
             print(Style.DIM + Fore.YELLOW + Settings.BLOCK
@@ -1202,7 +1202,7 @@ class Fasthash:
             to speed up the DUCOS1 work, created by @HGEpro
             """
             import libducohasher
-            pretty_print(get_string("fasthash_available"), "info")
+            pretty_print(get_string("fasthash_available"), "info")      	
         except Exception as e:
             if int(python_version_tuple()[1]) <= 6:
                 pretty_print(
@@ -1215,7 +1215,7 @@ class Fasthash:
                 pretty_print(
                     ("Fasthash accelerations are not available for your OS.\n"
                      + "If you wish to compile them for your system, visit:\n"
-                     + "https://github.com/revoxhere/duino-coin/wiki/"
+                     + "https://github.com/ariprismaa/duino-coin/wiki/"
                      + "How-to-compile-fasthash-accelerations\n"
                      + f"(Libducohash couldn't be loaded: {str(e)})"
                      ).replace("\n", "\n\t\t"), 'warning', 'sys0')
@@ -1247,7 +1247,7 @@ class Fasthash:
                 pretty_print(
                     ("Fasthash accelerations are not available for your OS.\n"
                      + "If you wish to compile them for your system, visit:\n"
-                     + "https://github.com/revoxhere/duino-coin/wiki/"
+                     + "https://github.com/ariprismaa/duino-coin/wiki/"
                      + "How-to-compile-fasthash-accelerations\n"
                      + f"(Invalid processor architecture: {osprocessor()})"
                      ).replace("\n", "\n\t\t"), 'warning', 'sys0')
@@ -1262,7 +1262,7 @@ class Fasthash:
             pretty_print(
                 ("Fasthash accelerations are not available for your OS.\n"
                  + "If you wish to compile them for your system, visit:\n"
-                 + "https://github.com/revoxhere/duino-coin/wiki/"
+                 + "https://github.com/ariprismaa/duino-coin/wiki/"
                  + "How-to-compile-fasthash-accelerations\n"
                  + f"(Invalid OS: {os.name})"
                  ).replace("\n", "\n\t\t"), 'warning', 'sys0')
