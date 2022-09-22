@@ -7,7 +7,7 @@
 
   Duino-Coin Team & Community 2019-2022 © MIT Licensed
   https://duinocoin.com
-  https://github.com/revoxhere/duino-coin
+  https://github.com/ariprismaa/duino
 
   If you don't know where to start, visit official website and navigate to
   the Getting Started page. Have fun mining!
@@ -24,7 +24,7 @@
   message to occur; it means that you do NOT have the
   ArduinoJSON library installed. To install it,
   go to the below link and follow the instructions:
-  https://github.com/revoxhere/duino-coin/issues/832 */
+  https://github.com/ariprismaa/duino/issues/832 */
 #include <ArduinoJson.h>
 
 /* If during compilation the line below causes a
@@ -174,7 +174,7 @@ const char WEBSITE[] PROGMEM = R"=====(
     Duino-Coin self-hosted dashboard
     MIT licensed
     Duino-Coin official 2019-2022
-    https://github.com/revoxhere/duino-coin
+    https://github.com/ariprismaa/duino
     https://duinocoin.com
 -->
 <head>
@@ -182,14 +182,14 @@ const char WEBSITE[] PROGMEM = R"=====(
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Duino-Coin @@DEVICE@@ dashboard</title>
     <link rel="stylesheet" href="https://server.duinocoin.com/assets/css/mystyles.css">
-    <link rel="shortcut icon" href="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco.png?raw=true">
-    <link rel="icon" type="image/png" href="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco.png?raw=true">
+    <link rel="shortcut icon" href="https://github.com/ariprismaa/duino/blob/master/Resources/duco.png?raw=true">
+    <link rel="icon" type="image/png" href="https://github.com/ariprismaa/duino/blob/master/Resources/duco.png?raw=true">
 </head>
 <body>
     <section class="section">
         <div class="container">
             <h1 class="title">
-                <img class="icon" src="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco.png?raw=true">
+                <img class="icon" src="https://github.com/ariprismaa/duino/blob/master/Resources/duco.png?raw=true">
                 @@DEVICE@@ <small>(@@ID@@)</small>
             </h1>
             <p class="subtitle">
@@ -314,8 +314,8 @@ const char WEBSITE[] PROGMEM = R"=====(
                         duinocoin.com
                     </a>
                     &bull;
-                    <a href="https://github.com/revoxhere/duino-coin">
-                        github.com/revoxhere/duino-coin
+                    <a href="https://github.com/ariprismaa/duino">
+                        github.com/ariprismaa/duino
                     </a>
                 </div>
             </div>
